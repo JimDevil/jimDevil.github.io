@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "-lunr", "-search", "search-pro",
+    "back-to-top-button",
+    "expandable-chapters-small",
+    "page-toc-button"
+  ],
+  "pluginsConfig": {
+    "page-toc-button": {
+      "maxTocDepth": 2,
+      "minTocSize": 2
+    }
+  }
+}
