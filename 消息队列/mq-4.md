@@ -19,6 +19,6 @@
 
 ##### RocketMQ 分布式事务实现
 
-![image-20220210150443874](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210150443874.png)
+![image-20220210150443874](../images/image-20220210150443874.png)
 
 在 RocketMQ 中的事务实现中，增加了事务反查的机制来解决事务消息提交失败的问题。如果 Producer 也就是订单系统，在提交或者回滚事务消息时发生网络异常，RocketMQ的 Broker 没有收到提交或者回滚的请求，Broker 会定期去 Producer 上反查这个事务对应的本地事务的状态，然后根据反查结果决定提交或者回滚这个事务。
