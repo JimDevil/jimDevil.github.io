@@ -10,7 +10,7 @@
   + [如何处理消费过程中消息重复消费](消息队列/mq-6.md)
   + [消息积压该如何处理](消息队列/mq-7.md)
   
-* Kubernetes
+* [Kubernetes](kubernetes/README.md)
 
   + [k8s](kubernetes/k8s.md)
   
