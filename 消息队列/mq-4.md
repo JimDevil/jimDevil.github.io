@@ -15,7 +15,7 @@
 
 ##### 案例
 
-![image-20220210150409780](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210150409780.png)
+![image-20220210150409780](../images/image-20220210150409780.png)
 
 ##### RocketMQ 分布式事务实现
 

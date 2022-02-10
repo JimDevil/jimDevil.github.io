@@ -2,7 +2,7 @@
 
 一条消息从生产到消费完成这个过程，可以划分三个阶段
 
-![image-20220210151511483](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210151511483.png)
+![image-20220210151511483](../images/image-20220210151511483.png)
 
 + 生产阶段: 在这个阶段，从消息在 Producer 创建出来，经过网络传输发送到 Broker端。
 + 存储阶段: 在这个阶段，消息在 Broker 端存储，如果是集群，消息会在这个阶段被复制到其他的副本上。

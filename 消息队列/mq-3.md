@@ -2,21 +2,21 @@
 
 #### 队列模型
 
-![image-20220210143516648](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210143516648.png)
+![image-20220210143516648](../images/image-20220210143516648.png)
 
 #### 订阅发布模型
 
-![image-20220210143751353](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210143751353.png)
+![image-20220210143751353](../images/image-20220210143751353.png)
 
 `它们最大的区别其实就是，一份消息数据能不能被消费多次的问题。`
 
 ##### RabbitMQ解决多消费者问题
 
-![image-20220210143943285](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210143943285.png)
+![image-20220210143943285](../images/image-20220210143943285.png)
 
 ##### RocketMQ消费模型
 
-![image-20220210144300592](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210144300592.png)
+![image-20220210144300592](../jimDevil.github.io/images/image-20220210144300592.png)
 
 每个主题包含多个队列，通过多个队列来实现多实例并行生产和消费。需要注意的是，RocketMQ 只在队列上保证消息的有序性，主题层面是无法保证消息的严格顺序的。
 
