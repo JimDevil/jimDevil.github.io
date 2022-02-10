@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>数据库 · GitBook</title>
+        <title>消息模型 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="mysql.html" />
+    <link rel="next" href="mq-4.html" />
     
     
-    <link rel="prev" href="../kubernetes/k8s.html" />
+    <link rel="prev" href="mq-2.html" />
     
 
     </head>
@@ -118,7 +118,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../消息队列/README.md">
+        <li class="chapter " data-level="1.2" data-path="README.md">
             
                 <span>
             
@@ -132,9 +132,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../消息队列/mq-1.html">
+        <li class="chapter " data-level="1.2.1" data-path="mq-1.html">
             
-                <a href="../消息队列/mq-1.html">
+                <a href="mq-1.html">
             
                     
                     为什么需要消息队列
@@ -145,9 +145,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../消息队列/mq-2.html">
+        <li class="chapter " data-level="1.2.2" data-path="mq-2.html">
             
-                <a href="../消息队列/mq-2.html">
+                <a href="mq-2.html">
             
                     
                     该如何选择消息队列
@@ -158,9 +158,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../消息队列/mq-3.html">
+        <li class="chapter active" data-level="1.2.3" data-path="mq-3.html">
             
-                <a href="../消息队列/mq-3.html">
+                <a href="mq-3.html">
             
                     
                     消息模型
@@ -171,9 +171,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../消息队列/mq-4.html">
+        <li class="chapter " data-level="1.2.4" data-path="mq-4.html">
             
-                <a href="../消息队列/mq-4.html">
+                <a href="mq-4.html">
             
                     
                     如何利用事务消息实现分布式事务
@@ -184,9 +184,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../消息队列/mq-5.html">
+        <li class="chapter " data-level="1.2.5" data-path="mq-5.html">
             
-                <a href="../消息队列/mq-5.html">
+                <a href="mq-5.html">
             
                     
                     如何确保消息不丢失
@@ -197,9 +197,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="../消息队列/mq-6.html">
+        <li class="chapter " data-level="1.2.6" data-path="mq-6.html">
             
-                <a href="../消息队列/mq-6.html">
+                <a href="mq-6.html">
             
                     
                     如何处理消费过程中消息重复消费
@@ -210,9 +210,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="../消息队列/mq-7.html">
+        <li class="chapter " data-level="1.2.7" data-path="mq-7.html">
             
-                <a href="../消息队列/mq-7.html">
+                <a href="mq-7.html">
             
                     
                     消息积压该如何处理
@@ -260,9 +260,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../数据库/">
             
-                <a href="./">
+                <a href="../数据库/">
             
                     
                     数据库
@@ -274,9 +274,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="mysql.html">
+        <li class="chapter " data-level="1.4.1" data-path="../数据库/mysql.html">
             
-                <a href="mysql.html">
+                <a href="../数据库/mysql.html">
             
                     
                     Mysql
@@ -322,7 +322,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >数据库</a>
+        <a href=".." >消息模型</a>
     </h1>
 </div>
 
@@ -337,7 +337,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x4E3B;&#x9898;&#x548C;&#x961F;&#x5217;&#x7684;&#x533A;&#x522B;">&#x4E3B;&#x9898;&#x548C;&#x961F;&#x5217;&#x7684;&#x533A;&#x522B;</h1>
+<h4 id="&#x961F;&#x5217;&#x6A21;&#x578B;">&#x961F;&#x5217;&#x6A21;&#x578B;</h4>
+<p><img src="../Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210143516648.png" alt="image-20220210143516648"></p>
+<h4 id="&#x8BA2;&#x9605;&#x53D1;&#x5E03;&#x6A21;&#x578B;">&#x8BA2;&#x9605;&#x53D1;&#x5E03;&#x6A21;&#x578B;</h4>
+<p><img src="../Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210143751353.png" alt="image-20220210143751353"></p>
+<p><code>&#x5B83;&#x4EEC;&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#xFF0C;&#x4E00;&#x4EFD;&#x6D88;&#x606F;&#x6570;&#x636E;&#x80FD;&#x4E0D;&#x80FD;&#x88AB;&#x6D88;&#x8D39;&#x591A;&#x6B21;&#x7684;&#x95EE;&#x9898;&#x3002;</code></p>
+<h5 id="rabbitmq&#x89E3;&#x51B3;&#x591A;&#x6D88;&#x8D39;&#x8005;&#x95EE;&#x9898;">RabbitMQ&#x89E3;&#x51B3;&#x591A;&#x6D88;&#x8D39;&#x8005;&#x95EE;&#x9898;</h5>
+<p><img src="../Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210143943285.png" alt="image-20220210143943285"></p>
+<h5 id="rocketmq&#x6D88;&#x8D39;&#x6A21;&#x578B;">RocketMQ&#x6D88;&#x8D39;&#x6A21;&#x578B;</h5>
+<p><img src="../Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210144300592.png" alt="image-20220210144300592"></p>
+<p>&#x6BCF;&#x4E2A;&#x4E3B;&#x9898;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x901A;&#x8FC7;&#x591A;&#x4E2A;&#x961F;&#x5217;&#x6765;&#x5B9E;&#x73B0;&#x591A;&#x5B9E;&#x4F8B;&#x5E76;&#x884C;&#x751F;&#x4EA7;&#x548C;&#x6D88;&#x8D39;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;RocketMQ &#x53EA;&#x5728;&#x961F;&#x5217;&#x4E0A;&#x4FDD;&#x8BC1;&#x6D88;&#x606F;&#x7684;&#x6709;&#x5E8F;&#x6027;&#xFF0C;&#x4E3B;&#x9898;&#x5C42;&#x9762;&#x662F;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x6D88;&#x606F;&#x7684;&#x4E25;&#x683C;&#x987A;&#x5E8F;&#x7684;&#x3002;</p>
+<p>RocketMQ &#x4E2D;&#xFF0C;&#x8BA2;&#x9605;&#x8005;&#x7684;&#x6982;&#x5FF5;&#x662F;&#x901A;&#x8FC7;&#x6D88;&#x8D39;&#x7EC4;&#xFF08;Consumer Group&#xFF09;&#x6765;&#x4F53;&#x73B0;&#x7684;&#x3002;&#x6BCF;&#x4E2A;&#x6D88;&#x8D39;&#x7EC4;&#x90FD;&#x6D88;&#x8D39;&#x4E3B;&#x9898;&#x4E2D;&#x4E00;&#x4EFD;&#x5B8C;&#x6574;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x4E0D;&#x540C;&#x6D88;&#x8D39;&#x7EC4;&#x4E4B;&#x95F4;&#x6D88;&#x8D39;&#x8FDB;&#x5EA6;&#x5F7C;&#x6B64;&#x4E0D;&#x53D7;&#x5F71;&#x54CD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x88AB; Consumer Group1 &#x6D88;&#x8D39;&#x8FC7;&#xFF0C;&#x4E5F;&#x4F1A;&#x518D;&#x7ED9; Consumer Group2 &#x6D88;&#x8D39;&#x3002;</p>
+<p>&#x6D88;&#x8D39;&#x7EC4;&#x4E2D;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x7EC4;&#x5185;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x662F;&#x7ADE;&#x4E89;&#x6D88;&#x8D39;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6BCF;&#x4E2A;&#x6D88;&#x8D39;&#x8005;&#x8D1F;&#x8D23;&#x6D88;&#x8D39;&#x7EC4;&#x5185;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x6D88;&#x606F;&#x3002;&#x5982;&#x679C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x88AB;&#x6D88;&#x8D39;&#x8005; Consumer1 &#x6D88;&#x8D39;&#x4E86;&#xFF0C;&#x90A3;&#x540C;&#x7EC4;&#x7684;&#x5176;&#x4ED6;&#x6D88;&#x8D39;&#x8005;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x6536;&#x5230;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x5728; Topic &#x7684;&#x6D88;&#x8D39;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x6D88;&#x606F;&#x9700;&#x8981;&#x88AB;&#x4E0D;&#x540C;&#x7684;&#x7EC4;&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x6D88;&#x8D39;&#xFF0C;&#x6240;&#x4EE5;&#x6D88;&#x8D39;&#x5B8C;&#x7684;&#x6D88;&#x606F;&#x5E76;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x88AB;&#x5220;&#x9664;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981; RocketMQ &#x4E3A;&#x6BCF;&#x4E2A;&#x6D88;&#x8D39;&#x7EC4;&#x5728;&#x6BCF;&#x4E2A;&#x961F;&#x5217;&#x4E0A;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;&#xFF08;Consumer Offset&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x4E4B;&#x524D;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x88AB;&#x6D88;&#x8D39;&#x8FC7;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x6CA1;&#x6709;&#x88AB;&#x6D88;&#x8D39;&#x8FC7;&#xFF0C;&#x6BCF;&#x6210;&#x529F;&#x6D88;&#x8D39;&#x4E00;&#x6761;&#x6D88;&#x606F;&#xFF0C;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;&#x5C31;&#x52A0;&#x4E00;&#x3002;&#x8FD9;&#x4E2A;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x6D88;&#x606F;&#x961F;&#x5217;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E22;&#x6D88;&#x606F;&#x7684;&#x539F;&#x56E0;&#x5927;&#x591A;&#x662F;&#x7531;&#x4E8E;&#x6D88;&#x8D39;&#x4F4D;&#x7F6E;&#x5904;&#x7406;&#x4E0D;&#x5F53;&#x5BFC;&#x81F4;&#x7684;&#x3002;</p>
+
                                 
                                 </section>
                             
@@ -364,12 +378,12 @@
 
             
                 
-                <a href="../kubernetes/k8s.html" class="navigation navigation-prev " aria-label="Previous page: k8s">
+                <a href="mq-2.html" class="navigation navigation-prev " aria-label="Previous page: 该如何选择消息队列">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="mysql.html" class="navigation navigation-next " aria-label="Next page: Mysql">
+                <a href="mq-4.html" class="navigation navigation-next " aria-label="Next page: 如何利用事务消息实现分布式事务">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -380,7 +394,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据库","level":"1.4","depth":1,"next":{"title":"Mysql","level":"1.4.1","depth":2,"path":"数据库/mysql.md","ref":"数据库/mysql.md","articles":[]},"previous":{"title":"k8s","level":"1.3.1","depth":2,"path":"kubernetes/k8s.md","ref":"kubernetes/k8s.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"数据库/README.md","mtime":"2021-10-29T08:43:38.517Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-10T08:47:39.982Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"消息模型","level":"1.2.3","depth":2,"next":{"title":"如何利用事务消息实现分布式事务","level":"1.2.4","depth":2,"path":"消息队列/mq-4.md","ref":"消息队列/mq-4.md","articles":[]},"previous":{"title":"该如何选择消息队列","level":"1.2.2","depth":2,"path":"消息队列/mq-2.md","ref":"消息队列/mq-2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"消息队列/mq-3.md","mtime":"2022-02-10T06:44:29.001Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-10T08:47:39.982Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Mysql · GitBook</title>
+        <title>如何确保消息不丢失 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="mq-6.html" />
     
-    <link rel="prev" href="./" />
+    
+    <link rel="prev" href="mq-4.html" />
     
 
     </head>
@@ -116,7 +118,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../消息队列/README.md">
+        <li class="chapter " data-level="1.2" data-path="README.md">
             
                 <span>
             
@@ -130,9 +132,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../消息队列/mq-1.html">
+        <li class="chapter " data-level="1.2.1" data-path="mq-1.html">
             
-                <a href="../消息队列/mq-1.html">
+                <a href="mq-1.html">
             
                     
                     为什么需要消息队列
@@ -143,9 +145,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../消息队列/mq-2.html">
+        <li class="chapter " data-level="1.2.2" data-path="mq-2.html">
             
-                <a href="../消息队列/mq-2.html">
+                <a href="mq-2.html">
             
                     
                     该如何选择消息队列
@@ -156,9 +158,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../消息队列/mq-3.html">
+        <li class="chapter " data-level="1.2.3" data-path="mq-3.html">
             
-                <a href="../消息队列/mq-3.html">
+                <a href="mq-3.html">
             
                     
                     消息模型
@@ -169,9 +171,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../消息队列/mq-4.html">
+        <li class="chapter " data-level="1.2.4" data-path="mq-4.html">
             
-                <a href="../消息队列/mq-4.html">
+                <a href="mq-4.html">
             
                     
                     如何利用事务消息实现分布式事务
@@ -182,9 +184,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../消息队列/mq-5.html">
+        <li class="chapter active" data-level="1.2.5" data-path="mq-5.html">
             
-                <a href="../消息队列/mq-5.html">
+                <a href="mq-5.html">
             
                     
                     如何确保消息不丢失
@@ -195,9 +197,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="../消息队列/mq-6.html">
+        <li class="chapter " data-level="1.2.6" data-path="mq-6.html">
             
-                <a href="../消息队列/mq-6.html">
+                <a href="mq-6.html">
             
                     
                     如何处理消费过程中消息重复消费
@@ -208,9 +210,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="../消息队列/mq-7.html">
+        <li class="chapter " data-level="1.2.7" data-path="mq-7.html">
             
-                <a href="../消息队列/mq-7.html">
+                <a href="mq-7.html">
             
                     
                     消息积压该如何处理
@@ -258,9 +260,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../数据库/">
             
-                <a href="./">
+                <a href="../数据库/">
             
                     
                     数据库
@@ -272,9 +274,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="mysql.html">
+        <li class="chapter " data-level="1.4.1" data-path="../数据库/mysql.html">
             
-                <a href="mysql.html">
+                <a href="../数据库/mysql.html">
             
                     
                     Mysql
@@ -320,7 +322,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Mysql</a>
+        <a href=".." >如何确保消息不丢失</a>
     </h1>
 </div>
 
@@ -335,11 +337,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mysql">Mysql</h1>
-<h1 id="a">A</h1>
-<h2 id="c">c</h2>
-<h1 id="b">B</h1>
-<h2 id="c">c</h2>
+                                <h1 id="&#x5982;&#x4F55;&#x786E;&#x4FDD;&#x6D88;&#x606F;&#x4E0D;&#x4E22;">&#x5982;&#x4F55;&#x786E;&#x4FDD;&#x6D88;&#x606F;&#x4E0D;&#x4E22;</h1>
+<p>&#x4E00;&#x6761;&#x6D88;&#x606F;&#x4ECE;&#x751F;&#x4EA7;&#x5230;&#x6D88;&#x8D39;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x4E09;&#x4E2A;&#x9636;&#x6BB5;</p>
+<p><img src="../Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220210151511483.png" alt="image-20220210151511483"></p>
+<ul>
+<li>&#x751F;&#x4EA7;&#x9636;&#x6BB5;: &#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x4ECE;&#x6D88;&#x606F;&#x5728; Producer &#x521B;&#x5EFA;&#x51FA;&#x6765;&#xFF0C;&#x7ECF;&#x8FC7;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x53D1;&#x9001;&#x5230; Broker&#x7AEF;&#x3002;</li>
+<li>&#x5B58;&#x50A8;&#x9636;&#x6BB5;: &#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x6D88;&#x606F;&#x5728; Broker &#x7AEF;&#x5B58;&#x50A8;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x96C6;&#x7FA4;&#xFF0C;&#x6D88;&#x606F;&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x88AB;&#x590D;&#x5236;&#x5230;&#x5176;&#x4ED6;&#x7684;&#x526F;&#x672C;&#x4E0A;&#x3002;</li>
+<li>&#x6D88;&#x8D39;&#x9636;&#x6BB5;: &#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;Consumer &#x4ECE; Broker &#x4E0A;&#x62C9;&#x53D6;&#x6D88;&#x606F;&#xFF0C;&#x7ECF;&#x8FC7;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x53D1;&#x9001;&#x5230;Consumer &#x4E0A;&#x3002;</li>
+</ul>
+<h5 id="&#x786E;&#x4FDD;&#x6D88;&#x606F;&#x4E0D;&#x4E22;&#x5931;">&#x786E;&#x4FDD;&#x6D88;&#x606F;&#x4E0D;&#x4E22;&#x5931;</h5>
+<ul>
+<li>&#x5728;&#x751F;&#x4EA7;&#x9636;&#x6BB5;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6355;&#x83B7;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x5E76;&#x91CD;&#x53D1;&#x6D88;&#x606F;&#x3002;</li>
+<li>&#x5728;&#x5B58;&#x50A8;&#x9636;&#x6BB5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x5237;&#x76D8;&#x548C;&#x590D;&#x5236;&#x76F8;&#x5173;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x8BA9;&#x6D88;&#x606F;&#x5199;&#x5165;&#x5230;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x7684;&#x78C1;&#x76D8;&#x4E0A;&#xFF0C;&#x6765;&#x786E;&#x4FDD;&#x6D88;&#x606F;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x67D0;&#x4E2A; Broker &#x5B95;&#x673A;&#x6216;&#x8005;&#x78C1;&#x76D8;&#x635F;&#x574F;&#x800C;&#x4E22;&#x5931;&#x3002;</li>
+<li>&#x5728;&#x6D88;&#x8D39;&#x9636;&#x6BB5;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x5904;&#x7406;&#x5B8C;&#x5168;&#x90E8;&#x6D88;&#x8D39;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x53D1;&#x9001;&#x6D88;&#x8D39;&#x786E;&#x8BA4;&#x3002;</li>
+</ul>
 
                                 
                                 </section>
@@ -367,10 +378,14 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 数据库">
+                <a href="mq-4.html" class="navigation navigation-prev " aria-label="Previous page: 如何利用事务消息实现分布式事务">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="mq-6.html" class="navigation navigation-next " aria-label="Next page: 如何处理消费过程中消息重复消费">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -379,7 +394,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mysql","level":"1.4.1","depth":2,"previous":{"title":"数据库","level":"1.4","depth":1,"path":"数据库/README.md","ref":"数据库/README.md","articles":[{"title":"Mysql","level":"1.4.1","depth":2,"path":"数据库/mysql.md","ref":"数据库/mysql.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"数据库/mysql.md","mtime":"2021-10-29T09:12:37.441Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-10T08:47:39.982Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"如何确保消息不丢失","level":"1.2.5","depth":2,"next":{"title":"如何处理消费过程中消息重复消费","level":"1.2.6","depth":2,"path":"消息队列/mq-6.md","ref":"消息队列/mq-6.md","articles":[]},"previous":{"title":"如何利用事务消息实现分布式事务","level":"1.2.4","depth":2,"path":"消息队列/mq-4.md","ref":"消息队列/mq-4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"消息队列/mq-5.md","mtime":"2022-02-10T07:25:12.237Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-10T08:47:39.982Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
