@@ -1,7 +1,7 @@
 # Summary
 
 * [设计模式](设计模式/README.md)
-+ [创建型](设计模式/创建型/README.md)
+  + [创建型](设计模式/创建型/README.md)
     + [单例模式](设计模式/创建型/单例模式.md)
 
 * [消息队列](消息队列/README.md)
@@ -14,12 +14,11 @@
   + [如何处理消费过程中消息重复消费](消息队列/mq-6.md)
   + [消息积压该如何处理](消息队列/mq-7.md)
   
-* [Kubernetes](kubernetes/README.md)
-+ [k8s](kubernetes/k8s.md)
-  + [深入解析k8s](深入剖析k8s/k8s.md)
+* [Kubernetes](kubernetes/k8s.md)
++ [深入剖析K8S](深入剖析k8s/k8s.md)
 
 + [高并发系统设计]()
   + [缓存](高并发系统设计/缓存/缓存.md)
 
-
++ [系统性能调优](系统性能调优/1.md)
 

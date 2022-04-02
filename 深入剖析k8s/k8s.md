@@ -141,7 +141,7 @@ Calico 项目的架构就非常容易理解了。它由三个部分组成：
 
 
 
-+ Calico 维护的网络在默认配置下，是一个被称为“Node-to-NodeMesh”的模式。这时候，每台宿主机上的 BGP Client 都需要跟其他所有节点的 BGPClient 进行通信以便交换路由信息。但是，随着节点数量 N 的增加，这些连接的数量就会以 N²的规模快速增长，从而给集群本身的网络带来巨大的压力。所以，Node-to-Node Mesh 模式一般推荐用在少于 100 个节点的集群里。而在更大规模的集群中，你需要用到的是一个叫作 Route Reflector 的模式。
++ Calico 维护的网络在默认配置下，是一个被称为“Node-to-Node Mesh”的模式。这时候，每台宿主机上的 BGP Client 都需要跟其他所有节点的 BGPClient 进行通信以便交换路由信息。但是，随着节点数量 N 的增加，这些连接的数量就会以 N²的规模快速增长，从而给集群本身的网络带来巨大的压力。所以，Node-to-Node Mesh 模式一般推荐用在少于 100 个节点的集群里。而在更大规模的集群中，你需要用到的是一个叫作 Route Reflector 的模式。
 
 
 
@@ -155,7 +155,7 @@ Calico 项目的架构就非常容易理解了。它由三个部分组成：
 
 + kube-proxy 通过 iptables 处理 Service 的过程，其实需要在宿主机上设置相当多的 iptables 规则。而且，kube-proxy 还需要在控制循环里不断地刷新这些规则来确保它们始终是正确的。
 + IPVS 在内核中的实现其实也是基于 Netfilter 的 NAT 模式，所以在转发这一层上，理论上 IPVS 并没有显著的性能提升。但是，IPVS 并不需要在宿主机上为每个 Pod 设置 iptables 规则,而是把对这些“规则”的处理放到了内核态，从而极大地降低了维护这些规则的代价。
-+ PVS 模块只负责上述的负载均衡和代理功能。而一个完整的 Service流程正常工作所需要的包过滤、SNAT 等操作，还是要靠 iptables 来实现。只不过，这些辅助性的 iptables 规则数量有限，也不会随着 Pod 数量的增加而增加。
++ IPVS 模块只负责上述的负载均衡和代理功能。而一个完整的 Service流程正常工作所需要的包过滤、SNAT 等操作，还是要靠 iptables 来实现。只不过，这些辅助性的 iptables 规则数量有限，也不会随着 Pod 数量的增加而增加。
 + 所谓 Service，其实就是 Kubernetes 为 Pod 分配的、固定的、基于 iptables（或者 IPVS）的访问入口。而这些访问入口代理的 Pod 信息，则来自于Etcd，由 kube-proxy 通过控制循环来维护。
 
 
@@ -168,3 +168,13 @@ Calico 项目的架构就非常容易理解了。它由三个部分组成：
 默认调度器会首先调用一组叫作 Predicate 的调度算法，来检查每个 Node。然后，再调用一组叫作 Priority 的调度算法，来给上一步得到的结果里的每个 Node 打分。最终的调度结果，就是得分最高的那个 Node。
 
 ![image-20220310174936309](../images/image-20220310174936309.png)
+
+#### CRI
+
+![image-20220314165834922](../images/image-20220314165834922.png)
+
+当 Kubernetes 通过编排能力创建了一个 Pod 之后，调度器会为这个 Pod 选择一个具体的节点来运行。这时候，kubelet 当然就会通过前面讲解过的 SyncLoop 来判断需要执行的具体操作，比如创建一个 Pod。那么此时，kubelet 实际上就会调用一个叫作GenericRuntime 的通用组件来发起创建 Pod 的 CRI 请求。
+
+
+
+如果你使用的容器项目是 Docker 的话，那么负责响应这个请求的就是一个叫作dockershim 的组件。它会把 CRI 请求里的内容拿出来，然后组装成 Docker API 请求发给Docker Daemon。
