@@ -122,7 +122,7 @@ k8s initializer的原理，在pod的metadata中添加initializers  pedding字段
 
 > host-gw
 
-![image-20220310112646404](../image-20220310112646404.png)
+![image-20220310112646404](../images/image-20220310112646404.png)
 
 ##### calico
 
