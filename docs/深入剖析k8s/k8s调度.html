@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>消息积压该如何处理 · GitBook</title>
+        <title>k8s调度器 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../kubernetes/k8s.html" />
+    <link rel="next" href="k8s网络插件.html" />
     
     
-    <link rel="prev" href="mq-6.html" />
+    <link rel="prev" href="k8s.html" />
     
 
     </head>
@@ -169,9 +169,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../消息队列/">
             
-                <a href="./">
+                <a href="../消息队列/">
             
                     
                     消息队列
@@ -183,9 +183,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="mq-1.html">
+        <li class="chapter " data-level="1.3.1" data-path="../消息队列/mq-1.html">
             
-                <a href="mq-1.html">
+                <a href="../消息队列/mq-1.html">
             
                     
                     为什么需要消息队列
@@ -196,9 +196,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="mq-2.html">
+        <li class="chapter " data-level="1.3.2" data-path="../消息队列/mq-2.html">
             
-                <a href="mq-2.html">
+                <a href="../消息队列/mq-2.html">
             
                     
                     该如何选择消息队列
@@ -209,9 +209,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="mq-3.html">
+        <li class="chapter " data-level="1.3.3" data-path="../消息队列/mq-3.html">
             
-                <a href="mq-3.html">
+                <a href="../消息队列/mq-3.html">
             
                     
                     消息模型
@@ -222,9 +222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="mq-4.html">
+        <li class="chapter " data-level="1.3.4" data-path="../消息队列/mq-4.html">
             
-                <a href="mq-4.html">
+                <a href="../消息队列/mq-4.html">
             
                     
                     如何利用事务消息实现分布式事务
@@ -235,9 +235,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="mq-5.html">
+        <li class="chapter " data-level="1.3.5" data-path="../消息队列/mq-5.html">
             
-                <a href="mq-5.html">
+                <a href="../消息队列/mq-5.html">
             
                     
                     如何确保消息不丢失
@@ -248,9 +248,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="mq-6.html">
+        <li class="chapter " data-level="1.3.6" data-path="../消息队列/mq-6.html">
             
-                <a href="mq-6.html">
+                <a href="../消息队列/mq-6.html">
             
                     
                     如何处理消费过程中消息重复消费
@@ -261,9 +261,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.7" data-path="mq-7.html">
+        <li class="chapter " data-level="1.3.7" data-path="../消息队列/mq-7.html">
             
-                <a href="mq-7.html">
+                <a href="../消息队列/mq-7.html">
             
                     
                     消息积压该如何处理
@@ -292,9 +292,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../深入剖析k8s/k8s.html">
+        <li class="chapter " data-level="1.5" data-path="k8s.html">
             
-                <a href="../深入剖析k8s/k8s.html">
+                <a href="k8s.html">
             
                     
                     深入剖析K8S
@@ -306,9 +306,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../深入剖析k8s/k8s调度.html">
+        <li class="chapter active" data-level="1.5.1" data-path="k8s调度.html">
             
-                <a href="../深入剖析k8s/k8s调度.html">
+                <a href="k8s调度.html">
             
                     
                     k8s调度器
@@ -319,9 +319,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../深入剖析k8s/k8s网络插件.html">
+        <li class="chapter " data-level="1.5.2" data-path="k8s网络插件.html">
             
-                <a href="../深入剖析k8s/k8s网络插件.html">
+                <a href="k8s网络插件.html">
             
                     
                     k8s网络
@@ -425,7 +425,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >消息积压该如何处理</a>
+        <a href=".." >k8s调度器</a>
     </h1>
 </div>
 
@@ -440,19 +440,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6D88;&#x606F;&#x79EF;&#x538B;&#x5982;&#x4F55;&#x5904;&#x7406;">&#x6D88;&#x606F;&#x79EF;&#x538B;&#x5982;&#x4F55;&#x5904;&#x7406;</h1>
-<h4 id="&#x4F18;&#x5316;&#x6027;&#x80FD;&#x6765;&#x907F;&#x514D;&#x6D88;&#x606F;&#x79EF;&#x538B;">&#x4F18;&#x5316;&#x6027;&#x80FD;&#x6765;&#x907F;&#x514D;&#x6D88;&#x606F;&#x79EF;&#x538B;</h4>
+                                <h3 id="k8s-&#x8D44;&#x6E90;&#x6A21;&#x578B;">K8s &#x8D44;&#x6E90;&#x6A21;&#x578B;</h3>
+<p>&#x8D44;&#x6E90;&#x6A21;&#x578B;&#xFF1A; 3&#x79CD;QoS</p>
+<p>guaranteed(&#x4FDD;&#x8BC1;)&gt;burstable(&#x53EF;&#x7206;&#x53D1;&#x7684;)&gt;besteffort&#xFF08;&#x5C3D;&#x6700;&#x5927;&#x52AA;&#x529B;&#xFF09;</p>
 <ul>
-<li><p>&#x53D1;&#x9001;&#x7AEF;&#x6027;&#x80FD;&#x4F18;&#x5316;</p>
+<li><p>Guaranteed: &#x6BCF;&#x4E00;&#x4E2A;container&#x90FD;&#x8BBE;&#x7F6E;&#x4E86;limit&#x4E0E;request&#x4E14;&#x503C;&#x76F8;&#x540C;&#xFF0C;&#x6216;&#x53EA;&#x8BBE;&#x7F6E;&#x4E86;limit</p>
 </li>
-<li><p>&#x8BBE;&#x7F6E;&#x5408;&#x9002;&#x7684;&#x5E76;&#x53D1;&#x548C;&#x6279;&#x91CF;&#x5927;&#x5C0F;</p>
+<li><p>Burstable: &#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;container&#x8BBE;&#x7F6E;&#x4E86;request</p>
 </li>
-<li><p>&#x6D88;&#x8D39;&#x7AEF;&#x6027;&#x80FD;&#x4F18;&#x5316;</p>
-</li>
-<li><p>&#x4E00;&#x5B9A;&#x8981;&#x4FDD;&#x8BC1;&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x6D88;&#x8D39;&#x6027;&#x80FD;&#x8981;&#x9AD8;&#x4E8E;&#x751F;&#x4EA7;&#x7AEF;&#x7684;&#x53D1;&#x9001;&#x6027;&#x80FD;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x7CFB;&#x7EDF;&#x624D;&#x80FD;&#x5065;&#x5EB7;&#x7684;&#x6301;&#x7EED;&#x8FD0;&#x884C;&#x3002;</p>
-</li>
-<li>&#x901A;&#x8FC7;&#x6C34;&#x5E73;&#x6269;&#x5BB9;&#xFF0C;&#x589E;&#x52A0;&#x6D88;&#x8D39;&#x7AEF;&#x7684;&#x5E76;&#x53D1;&#x6570;&#x6765;&#x63D0;&#x5347;&#x603B;&#x4F53;&#x7684;&#x6D88;&#x8D39;&#x6027;&#x80FD;&#x3002;&#x7279;&#x522B;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x5728;&#x6269;&#x5BB9; Consumer &#x7684;&#x5B9E;&#x4F8B;&#x6570;&#x91CF;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x540C;&#x6B65;&#x6269;&#x5BB9;&#x4E3B;&#x9898;&#x4E2D;&#x7684;&#x5206;&#x533A;&#xFF08;&#x4E5F;&#x53EB;&#x961F;&#x5217;&#xFF09;&#x6570;&#x91CF;&#xFF0C;&#x786E;&#x4FDD; Consumer &#x7684;&#x5B9E;&#x4F8B;&#x6570;&#x548C;&#x5206;&#x533A;&#x6570;&#x91CF;&#x662F;&#x76F8;&#x7B49;&#x7684;&#x3002;</li>
+<li>Besteffort:&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;limit&#x548C;request</li>
 </ul>
+<p>Eviction(&#x9A71;&#x9010;): &#x5206;soft&#xFF08;&#x7F13;&#x51B2;&#x65F6;&#x95F4;&#xFF09;&#x548C;hard&#xFF08;&#x7ACB;&#x5373;&#xFF09;&#xFF0C;&#x4F9D;&#x9760;Cgroup&#x4EE5;&#x53CA;cAdvisor</p>
+<p>&#x5220;&#x9664;pod&#x65F6;&#x53C2;&#x8003;QoS</p>
+<p>Cpuset: &#x5C06;pod&#x7684;QoS&#x8BBE;&#x7F6E;&#x4E3A;guaranteed,cpu&#x8D44;&#x6E90;&#x8BBE;&#x7F6E;&#x4E3A;&#x6574;&#x6570;</p>
+<ul>
+<li>&#x5F53;node&#x5B58;&#x5728;&#x538B;&#x529B;&#x662F;&#x4F1A;&#x88AB;&#x6253;&#x4E0A;taint,&#x4E0D;&#x4F1A;&#x88AB;&#x8C03;&#x5EA6;&#x5230;</li>
+</ul>
+<h3 id="k8s-&#x8C03;&#x5EA6;&#x5668;">K8S &#x8C03;&#x5EA6;&#x5668;</h3>
+<p>&#x804C;&#x8D23;&#xFF1A; &#x4E3A;pod&#x9009;&#x51FA;&#x4E00;&#x4E2A;&#x6700;&#x5408;&#x9002;&#x7684;node</p>
+<p>Predicate&#xFF1A;&#x68C0;&#x67E5;&#x6BCF;&#x4E2A;node(&#x591A;&#x4E2A;goroutine,&#x4EE5;&#x8282;&#x70B9;&#x7C92;&#x5EA6;&#x5E76;&#x53D1;&#x6267;&#x884C;)</p>
+<p>Priority: &#x7ED9;node&#x6253;&#x5206;&#xFF08;mapreduce&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x6C47;&#x603B;&#xFF09;</p>
+<p>&#x8C03;&#x5EA6;&#x8FC7;&#x7A0B;&#xFF1A;
+Informer path: informer watch etcd-&gt;push queue-&gt;update local cache</p>
+<p>Schedule path: pop queue-&gt;predicates-&gt;prioritys-&gt; bind</p>
+<p>Cache&#x4F5C;&#x7528;: &#x96C6;&#x7FA4;&#x4FE1;&#x606F;&#xFF08;node&#x3001;pod&#x3001;svc&#x7B49;&#xFF09;cache&#x5316;&#xFF0C;&#x63D0;&#x9AD8;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;&#x6548;&#x7387;</p>
+<p>bind: &#x4FEE;&#x6539;pod&#x7684;nodename,&#x53EA;&#x4F1A;&#x66F4;&#x65B0;cache&#xFF0C;&#x5E76;&#x4E0D;&#x8C03;&#x7528;apiserver&#x3002;&#x201C;&#x4E50;&#x89C2;&#x201D;&#x5047;&#x8BBE;&#x7684;API&#x5BF9;&#x8C61;&#x66F4;&#x65B0;&#x65B9;&#x5F0F;&#xFF0C;&#x79F0;&#x4F5C;&#x201C;assume&quot;(&#x5047;&#x8BBE;)&#x3002;&#x4E4B;&#x540E;&#x95EF;&#x5C06;&#x4E00;&#x4E2A;goroutine&#x5F02;&#x6B65;&#x7684;&#x60F3;APIserver&#x66F4;&#x65B0;</p>
+<p>Kubelet: admit&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x901A;&#x8FC7;predicates&#x91CC;&#x7684;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x8C03;&#x5EA6;&#x7B97;&#x6CD5;&#xFF08;&#x8D44;&#x6E90;&#x3001;&#x7AEF;&#x53E3;&#x7B49;&#x60C5;&#x51B5;&#xFF09;&#x505A;&#x4E8C;&#x6B21;&#x786E;&#x8BA4;</p>
+<p>predicates&#x7B97;&#x6CD5;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#xFF1A;</p>
+<p>1.GeneralPredicates:&#x57FA;&#x7840;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#xFF0C;&#x68C0;&#x67E5;resource,host,port&#x7B49;</p>
+<p>2.volume&#x76F8;&#x5173;&#xFF1A;&#x6302;&#x8F7D;&#x662F;&#x5426;&#x51B2;&#x7A81;&#xFF0C;&#x8282;&#x70B9;&#x4E0A;volume&#x662F;&#x5426;&#x8D85;&#x8FC7;&#x4E00;&#x5B9A;&#x6570;&#x76EE;</p>
+<p>3.node&#x76F8;&#x5173;&#x8FC7;&#x6EE4;&#xFF1A;&#x6C61;&#x70B9;&#x548C;&#x5BB9;&#x5FCD;</p>
+<p>4.pod&#x76F8;&#x5173;&#x8FC7;&#x6EE4;&#xFF1A;affinity/anti-affinity</p>
+<p>priority&#x7B97;&#x6CD5;&#xFF1A;</p>
+<p>&#x5E38;&#x7528;&#x7684;LeastRequestedPriority&#xFF1A;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x9009;&#x62E9;&#x7A7A;&#x95F2;&#x8D44;&#x6E90;&#x6700;&#x591A;&#x7684;&#x4E3B;&#x673A;</p>
+<p>&#x4E3E;&#x4F8B;&#xFF1A;predicates&#x9009;&#x51FA;10&#x53F0;node&#x90FD;&#x6EE1;&#x8DB3;request,limit&#xFF0C;priority&#x5219;&#x8981;&#x6839;&#x636E;&#x6BCF;&#x53F0;node&#x7684;&#x5B9E;&#x9645;&#x7A7A;&#x95F2;&#x7684;&#x8D44;&#x6E90;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6253;&#x5206;</p>
+<h4 id="&#x4F18;&#x5148;&#x7EA7;&#x548C;&#x62A2;&#x5360;&#xFF08;preemption&#xFF09;">&#x4F18;&#x5148;&#x7EA7;&#x548C;&#x62A2;&#x5360;&#xFF08;preemption&#xFF09;</h4>
+<p>2&#x4E2A;&#x961F;&#x5217;&#xFF0C;</p>
+<p>activeQ: &#x8C03;&#x5EA6;&#x5668;&#x5DE5;&#x4F5C;&#x7684;queue</p>
+<p>unschedulableQ&#xFF1A;&#x8C03;&#x5EA6;&#x5931;&#x8D25;&#x7684;Pod</p>
+<p>&#x6D41;&#x7A0B;&#xFF1A;schedule failed-&gt;push unschedulableQ-&gt;Trigger preemption-&gt;check filed resaon-&gt;copy node info,&#x6A21;&#x62DF; preemption</p>
+<p>&#x771F;&#x6B63;&#x62A2;&#x5360;&#xFF1A;</p>
+<p>1.&#x5220;&#x9664;&#x727A;&#x7272;&#x8005;pod&#x7684;nominatedNodeName</p>
+<p>2.update &#x62A2;&#x5360;&#x8005;nominatedNodeName&#xFF0C;push to activeQ</p>
+<p>3.go delete Victim</p>
 
                                 
                                 </section>
@@ -480,12 +510,12 @@
 
             
                 
-                <a href="mq-6.html" class="navigation navigation-prev " aria-label="Previous page: 如何处理消费过程中消息重复消费">
+                <a href="k8s.html" class="navigation navigation-prev " aria-label="Previous page: 深入剖析K8S">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../kubernetes/k8s.html" class="navigation navigation-next " aria-label="Next page: Kubernetes">
+                <a href="k8s网络插件.html" class="navigation navigation-next " aria-label="Next page: k8s网络">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -496,7 +526,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"消息积压该如何处理","level":"1.3.7","depth":2,"next":{"title":"Kubernetes","level":"1.4","depth":1,"path":"kubernetes/k8s.md","ref":"kubernetes/k8s.md","articles":[]},"previous":{"title":"如何处理消费过程中消息重复消费","level":"1.3.6","depth":2,"path":"消息队列/mq-6.md","ref":"消息队列/mq-6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"消息队列/mq-7.md","mtime":"2022-02-10T08:19:42.837Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-21T17:32:40.842Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"k8s调度器","level":"1.5.1","depth":2,"next":{"title":"k8s网络","level":"1.5.2","depth":2,"path":"深入剖析k8s/k8s网络插件.md","ref":"深入剖析k8s/k8s网络插件.md","articles":[]},"previous":{"title":"深入剖析K8S","level":"1.5","depth":1,"path":"深入剖析k8s/k8s.md","ref":"深入剖析k8s/k8s.md","articles":[{"title":"k8s调度器","level":"1.5.1","depth":2,"path":"深入剖析k8s/k8s调度.md","ref":"深入剖析k8s/k8s调度.md","articles":[]},{"title":"k8s网络","level":"1.5.2","depth":2,"path":"深入剖析k8s/k8s网络插件.md","ref":"深入剖析k8s/k8s网络插件.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"深入剖析k8s/k8s调度.md","mtime":"2022-04-21T08:18:57.233Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-21T17:32:40.842Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
