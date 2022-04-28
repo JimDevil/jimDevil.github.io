@@ -7,7 +7,7 @@
 
 ### IO多路复用
 
-![image-20220426222304098](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220426222304098.png)
+![image-20220426222304098](../images/image-20220426222304098.png)
 
 #### 阻塞式IO
 
