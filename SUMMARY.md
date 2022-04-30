@@ -8,20 +8,14 @@
 * [GO学习](Go/README.md)
 
   + [字符集](Go/1-字符集.md)
-
-  + [slice](Go/2-slice.md)
-
++ [slice](Go/2-slice.md)
   + [结构体与内存对齐](Go/3-结构体与内存对齐.md)
-
-  + [map](Go/4-map.md)
-
++ [map](Go/4-map.md)
   + [函数调用栈](Go/5-函数调用栈.md)
-
-  + [defer与painc](Go/6-defer与painc.md)
-
++ [defer与painc](Go/6-defer与painc.md)
   + [类型系统](Go/7-类型系统.md)
-
-    
++ [GMP](Go/8-GMP.md)
+  
 * [消息队列](消息队列/README.md)
 
   + [为什么需要消息队列](消息队列/mq-1.md)
