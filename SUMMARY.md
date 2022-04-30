@@ -6,18 +6,15 @@
   * [协程和IO多路复用](操作系统/协程和IO多路复用.md)
   * [同步与锁](操作系统/同步.md)
 * [GO学习](Go/README.md)
-
   + [字符集](Go/1-字符集.md)
-+ [slice](Go/2-slice.md)
+  + [slice](Go/2-slice.md)
   + [结构体和内存对齐](Go/3-结构体和内存对齐.md)
-+ [map](Go/4-map.md)
+  + [map](Go/4-map.md)
   + [函数调用栈](Go/5-函数调用栈.md)
-+ [defer与painc](Go/6-defer与painc.md)
+  + [defer与painc](Go/6-defer与painc.md)
   + [类型系统](Go/7-类型系统.md)
-+ [GPM](Go/8-GPM.md)
-  
+  + [GPM](Go/8-GPM.md)  
 * [消息队列](消息队列/README.md)
-
   + [为什么需要消息队列](消息队列/mq-1.md)
   + [该如何选择消息队列](消息队列/mq-2.md)
   + [消息模型](消息队列/mq-3.md)
@@ -34,4 +31,3 @@
   + [redis](高并发系统设计/缓存/redis.md)
 + [系统性能调优](系统性能调优/1.md)
 + [DDD](DDD/1.md)
-
