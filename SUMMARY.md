@@ -9,7 +9,7 @@
 
   + [字符集](Go/1-字符集.md)
 + [slice](Go/2-slice.md)
-  + [结构体与内存对齐](Go/3-结构体与内存对齐.md)
+  + [结构体与内存对齐](Go/3-结构体和内存对齐.md)
 + [map](Go/4-map.md)
   + [函数调用栈](Go/5-函数调用栈.md)
 + [defer与painc](Go/6-defer与painc.md)
