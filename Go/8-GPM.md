@@ -1,6 +1,6 @@
 > 程序入口
 
-![image-20220430225242283](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220430225242283.png)
+![image-20220430225242283](../images/image-20220430225242283.png)
 
 osinit->schedinit->mstart->schedule()->runtime.main->main.main->exit/goexit()
 
