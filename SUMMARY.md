@@ -14,7 +14,7 @@
   + [函数调用栈](Go/5-函数调用栈.md)
 + [defer与painc](Go/6-defer与painc.md)
   + [类型系统](Go/7-类型系统.md)
-+ [GMP](Go/8-GMP.md)
++ [GPM](Go/8-GPM.md)
   
 * [消息队列](消息队列/README.md)
 
