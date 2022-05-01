@@ -15,7 +15,7 @@
   + [类型系统](Go/7-类型系统.md)
   + [GPM](Go/8-GPM.md)
   + [GC](Go/9-GC.md)
-  + [Mutex](Go/9-Mutex.md)
+  + [Mutex](Go/10-Mutex.md)
 * [消息队列](消息队列/README.md)
   + [为什么需要消息队列](消息队列/mq-1.md)
   + [该如何选择消息队列](消息队列/mq-2.md)

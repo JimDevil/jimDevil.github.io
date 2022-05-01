@@ -1,6 +1,6 @@
 > 内存数据分配
 
-![image-20220427000534803](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220427000534803.png)
+![image-20220427000534803](../images/image-20220427000534803.png)
 
 + 程序要执行 的指令在代码段， 全局变量量静态数据在数据段，函数相关变量、参数、返回值在栈帧中
 +  如果在编译阶段不能确定数据的大小或者对象生命周期超出当前函数，应该分配在堆上   
@@ -38,7 +38,7 @@ stw分多次与用户程序交替执行
 
 > 标记工作
 
-![image-20220427003930409](/Users/chengjin/my-github/blog/jimDevil.github.io/images/image-20220427003930409.png)
+![image-20220427003930409](../images/image-20220427003930409.png)
 
 1. 确定root节点是否为指针：从扫描bss段、数据段、协程栈上的root节点
 2. 是否执行堆内存 
