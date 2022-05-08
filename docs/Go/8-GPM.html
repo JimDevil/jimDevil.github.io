@@ -623,7 +623,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <blockquote>
-<p>&#x7A0B;&#x5E8F;&#x5165;&#x53E3;</p>
+<p>  &#x7A0B;&#x5E8F;&#x5165;&#x53E3;</p>
 </blockquote>
 <p><img src="../images/image-20220430225242283.png" alt="image-20220430225242283"></p>
 <p>osinit-&gt;schedinit-&gt;mstart-&gt;schedule()-&gt;runtime.main-&gt;main.main-&gt;exit/goexit()</p>
@@ -695,7 +695,7 @@
 <li>&#x4E00;&#x5B9A;&#x51E0;&#x7387;&#x83B7;&#x53D6;&#x4E00;&#x90E8;&#x5206;&#x5168;&#x5C40;runq&#x5230;&#x672C;&#x5730;runq&#xFF0C;p.schedick%61==0</li>
 <li>Findrunnable()&#x83B7;&#x53D6;&#x5F85;&#x6267;&#x884C;&#x7684;g, gcwaiting-&gt;local runq-&gt;global runq-&gt;netpoll-&gt;seal ther p</li>
 <li>&#x83B7;&#x53D6;&#x5230;&#x4E00;&#x4E2A;g&#x540E;&#xFF0C;&#x5224;&#x65AD;g.lockedm!=0&#xFF0C;&#x662F;&#x5426;&#x6709;&#x7ED1;&#x5B9A;&#x7684;m&#xFF0C;&#x6709;&#x7684;&#x8BDD;&#x91CD;&#x65B0;schedule</li>
-<li>Execute &#x6267;&#x884C;g,&#x7ED1;&#x5B9A;m&#x548C;q&#xFF0C;&#x4FEE;&#x6539;g&#x7684;&#x72B6;&#x6001;Grunnable-&gt;Grunning,p.schedtick++,&#x8C03;gogo(g.sched)&#x6062;&#x590D;&#x6267;&#x884C;&#x73B0;&#x573A;</li>
+<li>Execute &#x6267;&#x884C;g,&#x7ED1;&#x5B9A;m&#x548C;g&#xFF0C;&#x4FEE;&#x6539;g&#x7684;&#x72B6;&#x6001;Grunnable-&gt;Grunning,p.schedtick++,&#x8C03;gogo(g.sched)&#x6062;&#x590D;&#x6267;&#x884C;&#x73B0;&#x573A;</li>
 </ol>
 
                                 
@@ -740,7 +740,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GPM","level":"1.3.8","depth":2,"next":{"title":"GC","level":"1.3.9","depth":2,"path":"Go/9-GC.md","ref":"Go/9-GC.md","articles":[]},"previous":{"title":"类型系统","level":"1.3.7","depth":2,"path":"Go/7-类型系统.md","ref":"Go/7-类型系统.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Go/8-GPM.md","mtime":"2022-04-30T16:37:16.375Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-04T14:42:12.491Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GPM","level":"1.3.8","depth":2,"next":{"title":"GC","level":"1.3.9","depth":2,"path":"Go/9-GC.md","ref":"Go/9-GC.md","articles":[]},"previous":{"title":"类型系统","level":"1.3.7","depth":2,"path":"Go/7-类型系统.md","ref":"Go/7-类型系统.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-lunr","-search","search-pro","back-to-top-button","expandable-chapters-small","page-toc-button","theme-comscore"],"pluginsConfig":{"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Go/8-GPM.md","mtime":"2022-05-06T08:22:28.336Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-08T15:48:36.492Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

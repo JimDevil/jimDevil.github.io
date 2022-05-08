@@ -1,4 +1,4 @@
-> 程序入口
+>   程序入口
 
 ![image-20220430225242283](../images/image-20220430225242283.png)
 
@@ -66,4 +66,5 @@ Schedul():M 找到待执行的G
 4. 一定几率获取一部分全局runq到本地runq，p.schedick%61==0
 5. Findrunnable()获取待执行的g, gcwaiting->local runq->global runq->netpoll->seal ther p
 6. 获取到一个g后，判断g.lockedm!=0，是否有绑定的m，有的话重新schedule
-7. Execute 执行g,绑定m和q，修改g的状态Grunnable->Grunning,p.schedtick++,调gogo(g.sched)恢复执行现场
+7. Execute 执行g,绑定m和g，修改g的状态Grunnable->Grunning,p.schedtick++,调gogo(g.sched)恢复执行现场
+
