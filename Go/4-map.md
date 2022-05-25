@@ -34,8 +34,6 @@ type hmap struct {
 
 + 当B大于4时，会预分配2^(B-4)个溢出桶备用，与常规桶在内存上是连续的
 
-![image-20220428182857462](/Users/chengjin/Desktop/image-20220428182857462.png)
-
 > 扩容-渐进式扩容
 
 + 翻倍扩容： count/2^B > 6.5
